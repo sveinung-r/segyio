@@ -126,6 +126,7 @@ endif ()
 set(testdata ${CMAKE_CURRENT_SOURCE_DIR}/test-data)
 
 add_subdirectory(lib)
+add_subdirectory(external/catch2)
 # language bindings
 add_subdirectory(mex)
 add_subdirectory(python)
