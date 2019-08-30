@@ -39,7 +39,8 @@ class Gather(object):
 
         A group of offsets is always returned as an offset-by-samples
         numpy.ndarray. If either inline, crossline, or both, are slices, a
-        generator of such ndarrays are returned.
+        generator of such ndarrays are returned. The traces are returned in
+        inline sorted order.
 
         If the slice of offsets misses all offsets, a special, empty ndarray is
         returned.

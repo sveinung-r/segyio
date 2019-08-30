@@ -306,6 +306,9 @@ are available:
         print(offset)
 
 >>> f.gather[200, 241, :].shape
+>>> # Effectively yields a subcube as a generator of offset-by-samples ndarrays.
+>>> # The traces are returned in inline sorted order.
+>>> f.gather[200:300, 241:248, 1:10]
 
 >>> text = f.text[0]
 >>> type(text)
