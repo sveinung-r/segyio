@@ -920,6 +920,15 @@ class SegyFile(object):
         xlines  = np.copy(np.asarray(xlines,  dtype=np.intc))
         offsets = np.copy(np.asarray(offsets, dtype=np.intc))
 
+        print("Ilines")
+        print(ilines)
+        print("Unique ilines")
+        print(np.unique(ilines))
+        print("Xlines")
+        print(xlines)
+        print("Unique xlines")
+        print(np.unique(xlines))
+
         if np.unique(ilines).size != ilines.size:
             error = "Inlines inconsistent"
             solution = "expect all inlines to be unique"
