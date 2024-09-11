@@ -929,6 +929,9 @@ class SegyFile(object):
         print("Unique xlines")
         print(np.unique(xlines))
 
+        print("Numpy config")
+        print(np.show_config())
+
         if np.unique(ilines).size != ilines.size:
             error = "Inlines inconsistent"
             solution = "expect all inlines to be unique"
